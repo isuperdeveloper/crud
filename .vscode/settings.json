@@ -1,0 +1,14 @@
+{
+    "sqltools.connections": [
+        {
+            "connectionTimeout": 30,
+            "database": "php_crud",
+            "dialect": "MySQL",
+            "name": "cba infotech",
+            "password": "admin@cba",
+            "port": 3306,
+            "server": "localhost",
+            "username": "root"
+        }
+    ]
+}
