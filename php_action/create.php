@@ -8,7 +8,7 @@ if($_POST) {
 	$age = $_POST['age'];
 	$contact = $_POST['contact'];
 
-	$sql = "INSERT INTO members (fname, lname, contact, age, active) VALUES ('$fname', '$lname', '$contact', '$age', 1)";
+	$sql = "INSERT INTO members (fname, lname, contact, age ) VALUES ('$fname', '$lname', '$contact', '$age')";
 	if($connect->query($sql) === TRUE) {
 		echo "<p>New Record Successfully Created</p>";
 		echo "<a href='../create.php'><button type='button'>Back</button></a>";
