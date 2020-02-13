@@ -39,8 +39,13 @@
 				<th>Contact</th>
 				<td><input type="text" name="contact" placeholder="Contact" /></td>
 			</tr>
+
 			<tr>
-				<td><button type="submit">Save Changes</button></td>
+				<th>email</th>
+				<td><input type="text" name="email" placeholder="email" /></td>
+			</tr>
+			<tr>
+				<td><button  type="submit">Save Changes</button></td>
 				<td><a href="index.php"><button type="button">Back</button></a></td>
 			</tr>
 		</table>

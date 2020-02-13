@@ -29,12 +29,16 @@
 				<th>Name</th>
 				<th>Age</th>
 				<th>Contact</th>
+				<th>email</th>
 				<th>Option</th>
+				
+
+				
 			</tr>
 		</thead>
 		<tbody>
 			<?php
-			$sql = "SELECT * FROM members WHERE active = 1";
+			$sql = "SELECT * FROM members ";
 			$result = $connect->query($sql);
 
 			if($result->num_rows > 0) {
@@ -43,6 +47,7 @@
 						<td>".$row['fname']." ".$row['lname']."</td>
 						<td>".$row['age']."</td>
 						<td>".$row['contact']."</td>
+						<td>".$row['email']."</td>
 						<td>
 							<a href='edit.php?id=".$row['id']."'><button type='button'>Edit</button></a>
 							<a href='remove.php?id=".$row['id']."'><button type='button'>Remove</button></a>

@@ -6,9 +6,35 @@ if($_POST) {
 	$fname = $_POST['fname'];
 	$lname = $_POST['lname'];
 	$age = $_POST['age'];
-	$contact = $_POST['contact'];
+	$email = $_POST['email'];
 
-	$sql = "INSERT INTO members (fname, lname, contact, age ) VALUES ('$fname', '$lname', '$contact', '$age')";
+
+	$contact = $_POST['contact'];
+	$sql = "SELECT * FROM members WHERE email='$email'";
+	$result = $connect->query($sql);
+	if($result->num_rows > 0)  {
+		$msg="Sorry... email already taken"; 	
+
+echo "<script type='text/javascript'>alert('$msg');
+window.location.href='../index.php';
+</script>";
+  	}
+
+
+	  else{
+
+
+
+
+
+
+
+
+
+
+
+	$sql = "INSERT INTO members (fname, lname, contact, age,email) VALUES ('$fname', '$lname', '$contact', '$age','$email')";
+	
 	if($connect->query($sql) === TRUE) {
 		echo "<p>New Record Successfully Created</p>";
 		echo "<a href='../create.php'><button type='button'>Back</button></a>";
@@ -18,6 +44,6 @@ if($_POST) {
 	}
 
 	$connect->close();
+}	
 }
-
 ?>

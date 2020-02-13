@@ -7,10 +7,11 @@ if($_POST) {
 	$lname = $_POST['lname'];
 	$age = $_POST['age'];
 	$contact = $_POST['contact'];
+	$email = $_POST['email'];
 
 	$id = $_POST['id'];
 
-	$sql  = "UPDATE members SET fname = '$fname', lname = '$lname', age = '$age', contact = '$contact' WHERE id = {$id}";
+	$sql  = "UPDATE members SET fname = '$fname', lname = '$lname', age = '$age', contact = '$contact' , email='$email' WHERE id = {$id}";
 	if($connect->query($sql) === TRUE) {
 		echo "<p>Succcessfully Updated</p>";
 		echo "<a href='../edit.php?id=".$id."'><button type='button'>Back</button></a>";
