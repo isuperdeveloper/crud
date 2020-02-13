@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"> </script> <!--- include the live jquery library -->
+<script type="text/javascript" src="js/validate.js"></script> <!--- include the our jquery file  -->
 <head>
 	<title>Add Member</title>
 
