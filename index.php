@@ -25,7 +25,12 @@
 	<a href="create.php"><button type="button">Add Member</button></a>
 	<table border="1" cellspacing="0" cellpadding="0">
 		<thead>
+
+		<tr> <td> check all  </td>
+		<td> <input type="checkbox" id="checkall">   </td>
+		 </tr>
 			<tr>
+			<th>select</th>
 				<th>Name</th>
 				<th>Age</th>
 				<th>Contact</th>
@@ -45,7 +50,10 @@
 
 			if($result->num_rows > 0) {
 				while($row = $result->fetch_assoc()) {
+
+				
 					echo "<tr>
+					 <td > <input type='checkbox' id=".$row['id']" name='id[]' </td>
 						<td>".$row['fname']." ".$row['lname']."</td>
 						<td>".$row['age']."</td>
 						<td>".$row['contact']."</td>
@@ -53,6 +61,7 @@
 						<td>".$row['gender']."</td>
 						<td>".$row['roles']."</td>
 						<td>
+						    
 							<a href='edit.php?id=".$row['id']."'><button type='button'>Edit</button></a>
 							<a href='remove.php?id=".$row['id']."'><button type='button'>Remove</button></a>
 						</td>
@@ -66,5 +75,26 @@
 	</table>
 </div>
 
+
+
+
+
+<script>
+$(document).read(function(){
+	$('checkall').click(function()){
+
+if(this.checked){
+$('checkbox').each(function()
+ this.checked = true;
+})
+
+
+
+	}
+
+)}
+
+})
+</script>
 </body>
 </html>
