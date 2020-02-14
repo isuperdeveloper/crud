@@ -55,6 +55,12 @@ if($_GET['id']) {
 				<th>Contact</th>
 				<td><input type="text" name="contact" placeholder="Contact" value="<?php echo $data['contact'] ?>" /></td>
 			</tr>
+
+			<tr>
+				<th>email</th>
+				<td><input type="text" name="email" placeholder="email	" value="<?php echo $data['email'] ?>" /></td>
+			</tr>
+
 			<tr>
 				<input type="hidden" name="id" value="<?php echo $data['id']?>" />
 				<td><button type="submit">Save Changes</button></td>

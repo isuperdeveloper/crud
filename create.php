@@ -46,6 +46,23 @@
 				<th>email</th>
 				<td><input type="text" name="email" placeholder="email" /></td>
 			</tr>
+
+
+			<tr>
+				<th>gender</th>
+				<td><input type="radio" name="gender" value="male"  /> male</td> 
+				<td><input type="radio" name="gender"   value="female"    />  female</td>
+			</tr>  
+
+
+			<tr>
+				<th>roles</th> 
+				<td><input type="checkbox" name="roles[]" value="admin"/> Admin</td>
+				<td><input type="checkbox" name="roles[]" value="subadmin"/> subadmin</td>
+				<td><input type="checkbox" name="roles[]"  value="user"  /> user</td>
+			</tr>
+
+
 			<tr>
 				<td><button  type="submit">Save Changes</button></td>
 				<td><a href="index.php"><button type="button">Back</button></a></td>

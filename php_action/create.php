@@ -1,12 +1,18 @@
 <?php 
 
-include 'db_connect.php';
+include ('db_connect.php');
 
 if($_POST) {
+ //print_r ($_POST);
+
 	$fname = $_POST['fname'];
 	$lname = $_POST['lname'];
 	$age = $_POST['age'];
+
 	$email = $_POST['email'];
+	$gender = $_POST['gender'];
+	$rolle = $_POST['roles']; 
+	 $newrolles =  implode(",", $rolle);
 
 
 	$contact = $_POST['contact'];
@@ -22,18 +28,7 @@ window.location.href='../index.php';
 
 
 	  else{
-
-
-
-
-
-
-
-
-
-
-
-	$sql = "INSERT INTO members (fname, lname, contact, age,email) VALUES ('$fname', '$lname', '$contact', '$age','$email')";
+$sql = "INSERT INTO members (fname, lname, contact, age,email,gender,roles) VALUES ('$fname', '$lname', '$contact', '$age','$email','$gender','$newrolles ')";
 	
 	if($connect->query($sql) === TRUE) {
 		echo "<p>New Record Successfully Created</p>";

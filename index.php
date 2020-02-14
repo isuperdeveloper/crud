@@ -7,7 +7,7 @@
 
 	<style type="text/css">
 		.manageMember {
-			width: 50%;
+			width: 100%;
 			margin: auto;
 		}
 
@@ -30,6 +30,8 @@
 				<th>Age</th>
 				<th>Contact</th>
 				<th>email</th>
+				<th>gender</th>
+				<th>roles</th>
 				<th>Option</th>
 				
 
@@ -48,6 +50,8 @@
 						<td>".$row['age']."</td>
 						<td>".$row['contact']."</td>
 						<td>".$row['email']."</td>
+						<td>".$row['gender']."</td>
+						<td>".$row['roles']."</td>
 						<td>
 							<a href='edit.php?id=".$row['id']."'><button type='button'>Edit</button></a>
 							<a href='remove.php?id=".$row['id']."'><button type='button'>Remove</button></a>
