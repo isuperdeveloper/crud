@@ -18,7 +18,7 @@ if($_POST) {
 		echo "<a href='../index.php'><button type='button'>Home</button></a>";
 	} else {
 		echo "Erorr while updating record : ". $connect->error;
-	}
+	} 
 
 	$connect->close();
 

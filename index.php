@@ -30,7 +30,7 @@
 		<td> <input type="checkbox" id="checkall">   </td>
 		 </tr>
 			<tr>
-			<th>select</th>
+		
 				<th>Name</th>
 				<th>Age</th>
 				<th>Contact</th>
@@ -53,7 +53,7 @@
 
 				
 					echo "<tr>
-					 <td > <input type='checkbox' id=".$row['id']" name='id[]' </td>
+					
 						<td>".$row['fname']." ".$row['lname']."</td>
 						<td>".$row['age']."</td>
 						<td>".$row['contact']."</td>
@@ -78,23 +78,8 @@
 
 
 
-
-<script>
-$(document).read(function(){
-	$('checkall').click(function()){
-
-if(this.checked){
-$('checkbox').each(function()
- this.checked = true;
-})
-
-
-
-	}
-
-)}
-
-})
 </script>
 </body>
-</html>
+</html>\
+
+

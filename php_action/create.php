@@ -34,8 +34,9 @@ $sql = "INSERT INTO members (fname, lname, contact, age,email,gender,roles) VALU
 		echo "<p>New Record Successfully Created</p>";
 		echo "<a href='../create.php'><button type='button'>Back</button></a>";
 		echo "<a href='../index.php'><button type='button'>Home</button></a>";
+		
 	} else {
-		echo "Error " . $sql . ' ' . $connect->connect_error;
+		echo "Error " . $sql . '  ' . $connect->connect_error;
 	}
 
 	$connect->close();
