@@ -59,7 +59,7 @@
 						<td>".$row['contact']."</td>
 						<td>".$row['email']."</td>
 						<td>".$row['gender']."</td>
-						<td>".$row['roles']."</td>
+						<td>".$row['roller']."</td>
 						<td>
 						    
 							<a href='edit.php?id=".$row['id']."'><button type='button'>Edit</button></a>

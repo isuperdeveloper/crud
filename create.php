@@ -57,9 +57,9 @@
 
 			<tr>
 				<th>roles</th> 
-				<td><input type="checkbox" name="roles[]" value="admin"/> Admin</td>
-				<td><input type="checkbox" name="roles[]" value="subadmin"/> subadmin</td>
-				<td><input type="checkbox" name="roles[]"  value="user"  /> user</td>
+				<td><input type="checkbox" name="ch[]" value="Admin"/>Admin</td>
+				<td><input type="checkbox" name="ch[]" value="Subadmin"/>Subadmin</td>
+				<td><input type="checkbox" name="ch[]"  value="User"  />User</td>
 			</tr>
 
 
